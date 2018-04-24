@@ -9,15 +9,13 @@ namespace LetsWriteASong
     {
          public void Write()
         {
-            var Song = Console.ReadLine();
+            var song = Console.ReadLine();
 
-            string[] Notes = Song.Split(' ');
+            string[] notes = song.Split(' ');
 
-            
-
-            foreach(var note in Notes)
+            foreach(var note in notes)
             {
-                 
+                CopyNoteModel cnm = new CopyNoteModel(note, "");
             }
         }
     }
