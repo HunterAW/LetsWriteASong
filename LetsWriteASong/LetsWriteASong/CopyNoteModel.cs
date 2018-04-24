@@ -10,7 +10,7 @@ namespace LetsWriteASong
         public CopyNoteModel(string note, string NewFolder)
         {
             var sourcefile = (@"C:\Users\ASUS\source\repos\LetsWriteASong\LetsWriteASong\Models\" + note + ".stl");
-            var destfile = (NewFolder + "\test" + note + ".stl");
+            var destfile = (NewFolder + @"\" + note + ".stl");
 
             File.Copy(sourcefile, destfile, true);
             
