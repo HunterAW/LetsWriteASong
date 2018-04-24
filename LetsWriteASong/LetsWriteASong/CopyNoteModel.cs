@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.IO;
 
 namespace LetsWriteASong
 {
@@ -9,11 +6,11 @@ namespace LetsWriteASong
     {
         public CopyNoteModel(string note, string NewFolder)
         {
-            var sourcefile = (@"C:\Users\ASUS\source\repos\LetsWriteASong\LetsWriteASong\Models\" + note + ".stl");
-            var destfile = (NewFolder + @"\" + note + ".stl");
+            //todo have the sourcefile path generated dinamicly
+            var sourcefile = ($@"C:\Users\ASUS\source\repos\LetsWriteASong\LetsWriteASong\Models\{note}.stl");
+            var destfile = ($@"{NewFolder}\{note}.stl");
 
             File.Copy(sourcefile, destfile, true);
-            
         }
     }
 }

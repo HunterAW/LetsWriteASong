@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace LetsWriteASong
 {
@@ -11,7 +9,7 @@ namespace LetsWriteASong
             //todo: check to make sure the file does not currently excist.
             //todo: add relevent try catches.
             System.IO.Directory.CreateDirectory(NewFolder);
-            Console.WriteLine(NewFolder + " has been created on your desktop");
+            Console.WriteLine($"{NewFolder} has been created.");
         }
     }
 }
