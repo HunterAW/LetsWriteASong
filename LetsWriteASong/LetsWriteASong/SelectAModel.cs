@@ -7,7 +7,7 @@ namespace LetsWriteASong
 {
     class SelectAModel
     {
-         public void Write()
+         public SelectAModel(string NewFolder)
         {
             var song = Console.ReadLine();
 
@@ -15,7 +15,7 @@ namespace LetsWriteASong
 
             foreach(var note in notes)
             {
-                CopyNoteModel cnm = new CopyNoteModel(note, "");
+                CopyNoteModel cnm = new CopyNoteModel(note, NewFolder);
             }
         }
     }

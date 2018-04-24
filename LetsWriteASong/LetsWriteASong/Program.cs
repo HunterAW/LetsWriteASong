@@ -13,7 +13,9 @@ namespace LetsWriteASong
             Console.WriteLine("Select models to add to your 3dprint");
             Console.WriteLine("Dragon, Duck, Robot.");
 
-            
+            SelectAModel sm = new SelectAModel(NewFolder);
+
+            Console.WriteLine("Your music box is now ready. Drag and drop drop all files inside your newly created folder and drop them into the slicer of your choice");
 
             Console.ReadLine();
         }
